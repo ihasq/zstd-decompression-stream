@@ -1,0 +1,25 @@
+{
+  "name": "zstd-decompression-stream",
+  "version": "0.0.1",
+  "description": "ZstdDecompressionStream",
+  "main": "src/mod.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihasq/zstd-decompression-stream.git"
+  },
+  "keywords": [
+    "zstd"
+  ],
+  "author": "ihasq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ihasq/zstd-decompression-stream/issues"
+  },
+  "homepage": "https://github.com/ihasq/zstd-decompression-stream#readme",
+  "dependencies": {
+    "fzstd": "^0.1.1"
+  }
+}
