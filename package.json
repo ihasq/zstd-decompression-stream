@@ -1,10 +1,11 @@
 {
   "name": "zstd-decompression-stream",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ZstdDecompressionStream",
+  "type": "module",
   "main": "src/mod.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "bash test.sh"
   },
   "repository": {
     "type": "git",
