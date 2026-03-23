@@ -1,10 +1,22 @@
 {
   "name": "zstd-decompression-stream",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "ZstdDecompressionStream",
   "type": "module",
-  "main": "src/mod.js",
+  "main": "dist/mod.js",
+  "types": "dist/mod.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/mod.d.ts",
+      "import": "./dist/mod.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
     "test": "bash test.sh"
   },
   "repository": {
@@ -22,5 +34,8 @@
   "homepage": "https://github.com/ihasq/zstd-decompression-stream#readme",
   "dependencies": {
     "fzstd": "^0.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
   }
 }
